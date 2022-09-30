@@ -56,7 +56,7 @@ Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/prese
 | middleware	 | ページをレンダリングする前に実行される関数を定義して配置することができます。 |
 | layouts | アプリケーションのレイアウトファイルを入れます。 |
 | 　└default.vue | デフォルトのレイアウトファイルになります。 |
-| 　└error.vue | エラーページのレイアウトファイルになります。 |
+| └error.vue | エラーページのレイアウトファイルになります。 |
 | components | ビューで使用するためのコンポーネントを指定します。<br>**Nuxt.jsの影響下のファイルではなく、Nuxt.jsからは自動で読み込まれないので、ピュアなvueファイルになります。使用しないのであれば削除することが可能です。** |
 | assets | LESSやSCSS等のコンパイルされていないファイルを配置します。 |
 | README.md | |

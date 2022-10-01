@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <Header class="header" /> 
-    <div class="middle">
-      <Navigation class="navigation" />
-      <NuxtPage class="main"/>
+  <div class="h-screen">
+    <Header class="flex w-full h-[50px]" /> 
+    <div class="flex h-full">
+      <Navigation class="flex w-[150px]" />
+      <NuxtPage/>
     </div>
   </div>
 </template>
@@ -13,29 +13,3 @@
   const nuxtApp = useNuxtApp();
   console.log(nuxtApp.$appUrl.siteUrl());
 </script>
-
-<style>
-.header{
-    position: fixed;
-    width: 100%;
-    height: 50px;
-    z-index: 1;
-}
-
-.middle{
-    position:absolute;
-    top:50px;
-    display:flex
-}
-
-.navigation{
-    position: fixed;
-    height: 100%;
-    width:150px;
-}
-
-.main{
-    position: relative;
-    left:150px
-}
-</style>

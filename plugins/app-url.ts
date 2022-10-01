@@ -3,6 +3,7 @@ import { defineNuxtPlugin } from "#app";
 export class AppUrl {
   /** サイトのURLを取得する */
   public siteUrl() {
+    // console.log(window.location);
     return `https://example.com`;
   }
 

@@ -8,6 +8,12 @@
   </div>
 </template>
 
+<script lang="ts" setup>
+  // プラグインで実装した処理を呼び出し (プログラムから)
+  const nuxtApp = useNuxtApp();
+  console.log(nuxtApp.$appUrl.siteUrl());
+</script>
+
 <style>
 .header{
     position: fixed;

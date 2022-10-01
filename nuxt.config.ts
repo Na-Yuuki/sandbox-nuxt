@@ -1,5 +1,7 @@
 export default defineNuxtConfig({
-  css: [
-    '@/assets/css/reset.css',
-  ]
-})
+  nitro: {
+    preset: "node",
+  },
+  buildModules: ["@nuxtjs/tailwindcss"],
+  css: ["@/assets/css/reset.css", "@/assets/css/tailwind.css"],
+});

@@ -1,12 +1,3 @@
-<template>
-  <div class="box">
-    <div>count: {{ count }}</div>
-    <div>plusOne: {{ plusOne }}</div>
-    <div>
-      <button @click="countUp">COUNT UP</button>
-    </div>
-  </div>
-</template>
 
 <script setup>
   import { ref } from "vue";
@@ -31,6 +22,19 @@ function countUp() {
   count.value++;
 }
 </script>
+
+<template>
+  <div class="flex">
+    <div class="box">
+      <div>count: {{ count }}</div>
+      <div>plusOne: {{ plusOne }}</div>
+      <div>
+        <button @click="countUp">COUNT UP</button>
+      </div>
+    </div>
+    <input-field title="name" value/>
+  </div>
+</template>
 
 <style>
   .box {

@@ -3,7 +3,9 @@
     <Header class="flex w-full h-[50px]" />
     <div class="flex h-full">
       <Navigation class="flex w-[150px]" />
-      <NuxtPage />
+      <div class="flex-1 p-4">
+        <NuxtPage />
+      </div>
     </div>
   </div>
 </template>

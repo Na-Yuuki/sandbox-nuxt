@@ -1,26 +1,25 @@
-
 <script setup>
-  import { ref } from "vue";
+  import { ref } from 'vue';
 
   // constant
   const defaultCount = 1;
   // data
-  const count = ref(defaultCount)
+  const count = ref(defaultCount);
 
-// computed
-const plusOne = computed(() => count.value + 1);
+  // computed
+  const plusOne = computed(() => count.value + 1);
 
-// watch
-watch(count, (count, prevCount) => {
-  console.log(`watch: ${prevCount} -> ${count}`);
-});
+  // watch
+  watch(count, (count, prevCount) => {
+    console.log(`watch: ${prevCount} -> ${count}`);
+  });
 
-// method
-function countUp() {
-  console.log("call function countUp")
-  console.log(count)
-  count.value++;
-}
+  // method
+  function countUp() {
+    console.log('call function countUp');
+    console.log(count);
+    count.value++;
+  }
 </script>
 
 <template>
@@ -32,13 +31,13 @@ function countUp() {
         <button @click="countUp">COUNT UP</button>
       </div>
     </div>
-    <input-field title="name" value/>
+    <input-field title="name" value />
   </div>
 </template>
 
 <style>
   .box {
     border: 1px solid rgb(0 0 0 / 0.85);
-    padding:1rem
+    padding: 1rem;
   }
 </style>

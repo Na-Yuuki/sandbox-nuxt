@@ -7,6 +7,6 @@
       <li class="px-4 py-2 hover:bg-white hover:text-black">
         <NuxtLink to="/count-up">カウントアップ</NuxtLink>
       </li>
-    </ul>    
+    </ul>
   </div>
 </template>

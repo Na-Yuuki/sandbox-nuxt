@@ -1,9 +1,9 @@
 export default defineNuxtConfig({
   nitro: {
-    preset: "node",
+    preset: 'node',
   },
-  buildModules: ["@nuxtjs/tailwindcss"],
-  css: ["@/assets/css/reset.css", "@/assets/css/tailwind.css"],
+  buildModules: ['@nuxtjs/tailwindcss'],
+  css: ['@/assets/css/reset.css', '@/assets/css/tailwind.css'],
   bridge: {
     meta: true, // Nuxt 3 互換の useMeta を使用可能にする。
     // -- オプトインの特徴 --

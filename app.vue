@@ -1,9 +1,9 @@
 <template>
   <div class="h-screen">
-    <Header class="flex w-full h-[50px]" /> 
+    <Header class="flex w-full h-[50px]" />
     <div class="flex h-full">
       <Navigation class="flex w-[150px]" />
-      <NuxtPage/>
+      <NuxtPage />
     </div>
   </div>
 </template>

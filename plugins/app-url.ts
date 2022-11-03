@@ -1,4 +1,4 @@
-import { defineNuxtPlugin } from "#app";
+import { defineNuxtPlugin } from '#app';
 
 export class AppUrl {
   /** サイトのURLを取得する */
@@ -17,19 +17,19 @@ const appUrl = new AppUrl();
 
 // カスタムプラグインappUrlとしてnuxtに登録する
 export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.provide("appUrl", appUrl);
+  nuxtApp.provide('appUrl', appUrl);
 });
 
 //
 // nuxt用の型定義 (TypeScript用)
 //
 
-declare module "#app" {
+declare module '#app' {
   interface NuxtApp {
     $appUrl: AppUrl;
   }
 }
-declare module "@vue/runtime-core" {
+declare module '@vue/runtime-core' {
   interface ComponentCustomProperties {
     $appUrl: AppUrl;
   }
